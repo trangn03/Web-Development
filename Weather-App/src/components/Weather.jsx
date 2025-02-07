@@ -15,6 +15,7 @@ import { useRef } from 'react'
 const Weather = () => {
     const inputRef = useRef();
     const [weatherData, setWeatherData] = useState(false);
+    const [city, setCity] = useState("");
 
     const allIcons = {
         "01d": clear_icon,
@@ -68,13 +69,25 @@ const Weather = () => {
     }
 
     useEffect(() => {
-        search("London")
+        search("Washington")
     },[])
+
+    const handleKeyDown = (event) => {
+        if(event.key === "Enter") {
+            search(city);
+        }
+    };
 
   return (
     <div className="weather">
         <div className="search-bar">
-            <input ref={inputRef} type="text" placeholder='Search...' />
+            <input 
+                ref={inputRef}
+                type="text" 
+                placeholder="Enter a city" 
+                value ={city}
+                onChange={(e) => setCity(e.target.value)}
+                onKeyDown={handleKeyDown}/>
             <img src={search_icon} alt="search icon" onClick={()=>search(inputRef.current.value)}/>
         </div>
 

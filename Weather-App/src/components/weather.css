@@ -1,17 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
 .weather {
     place-self: center;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-image: linear-gradient(45deg, #2f4680, #500ae4);
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out
 }
 
 .search-bar{
     display: flex;
     align-items: center;
     gap: 12px;
+    width: 100%;
+    justify-content: center;
 }
 
 .search-bar input{
@@ -24,6 +35,10 @@
     background: #ebfffc;
     font-size: 18px;
 }
+.search-bar input:focus {
+    box-shadow: 0 3px 15px rgba(0, 255, 255, 0.5);
+    background: #dffaf6;
+}
 
 .search-bar img {
     width: 50px;
@@ -31,6 +46,11 @@
     border-radius: 50%;
     background: #ebfffc;
     cursor: pointer;
+}
+
+.search-bar img:hover {
+    transform: scale(1.1);
+    background: #dffaf6;
 }
 
 .weather-icon {
