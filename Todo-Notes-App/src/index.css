@@ -10,9 +10,16 @@
 }
 
 body {
-  background-color: #fae1dd;
+  background-color: #c5d8f7;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }

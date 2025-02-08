@@ -18,7 +18,7 @@ npm create vite@latest
 }
 
 body {
-  background-color: #fae1dd;
+  background-color: #c5d8f7;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;

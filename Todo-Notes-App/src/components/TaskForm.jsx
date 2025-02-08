@@ -1,41 +1,36 @@
-import React from 'react'
-import { useState } from 'react'
-import "../styles/taskform.css"
+import { useState } from "react";
+import "./../styles/TaskForm.css";
 
-function TaskForm() {
-    const [title, setTitle] = useState("");
-    const [notes, setNotes] = useState("");
+const TaskForm = ({ addTask }) => {
+  const [title, setTitle] = useState("");
+  const [notes, setNotes] = useState("");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if(!title.trim()) return;
-        addTask({title, notes});
-        setTitle("");
-        setNotes("");
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!title.trim()) return;
+    addTask({ title, notes });
+    setTitle("");
+    setNotes("");
+  };
 
   return (
-    <div className="task-form-container">
-        <h1>Todo Notes App</h1>
-        <form className="task-form" onSubmit={handleSubmit}>
-            <input type="text"
-            placeholder="Add a new task"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-        />
+    <form className="task-form" onSubmit={handleSubmit}>
+        <h2>Task title</h2>
+      <input 
+        type="text" 
+        placeholder="eg: Complete Quiz" 
+        value={title} 
+        onChange={(e) => setTitle(e.target.value)} 
+      />
+        <h2>Task notes (optional) </h2>
+      <textarea 
+        placeholder="eg: CS Quiz, Math quiz" 
+        value={notes} 
+        onChange={(e) => setNotes(e.target.value)} 
+      />
+      <button type="submit">Add Task</button>
+    </form>
+  );
+};
 
-        <textarea
-            className="task-notes"
-            placeholder="Add Notes"
-            value={notes}
-            onChange={(e) => setNotes(e.target.value)}
-        />
-
-        <button type="submit">Add Task</button>
-
-        </form>
-    </div>
-  )
-}
-
-export default TaskForm
+export default TaskForm;
