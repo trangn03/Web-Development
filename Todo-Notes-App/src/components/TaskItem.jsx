@@ -1,4 +1,4 @@
-import "./../styles/TaskList.css";
+import "./../styles/tasklist.css";
 
 const TaskItem = ({ task, handleComplete, handleDelete }) => {
   return (
