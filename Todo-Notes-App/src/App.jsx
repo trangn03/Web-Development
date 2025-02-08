@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="home">
-      <h1>Todo-Notes-App</h1>
+      <h1>Focus Deck 🎯</h1>
       <TaskForm addTask={addTask}/> 
       <TaskList tasks={tasks} handleComplete={handleComplete} handleDelete={handleDelete}/>
 
