@@ -10,6 +10,9 @@ Demo: <a href="https://globalweatherpredict.vercel.app" target="_blank" rel="noo
 
 A web application that provides real-time weather forecasts and predictions.
 
+# Todo Notes App
+Demo: <a href="https://focusdeck.vercel.app" target="_blank" rel="noopener noreferrer">Focus Deck</a>
+
 
 
  
