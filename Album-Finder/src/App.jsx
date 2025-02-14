@@ -6,7 +6,7 @@ import SearchBar from "./components/SearchBar";
 function App() {
   return (
     <div className="App">
-      <h1>Album Finder</h1>
+      <h1>Album Radar</h1>
       <SearchBar />
     </div>
   );
