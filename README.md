@@ -26,3 +26,8 @@ A sleek and intuitive countdown timer to track important events effortlessly—w
 🔗 **Demo Coming Soon**  
 
 A secure authentication system using JSON Web Tokens (JWT) to manage user access.  
+
+## 🔐 Album Finder
+🔗   
+
+Use Spotify API to find the album based on artist name 
