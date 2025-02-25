@@ -23,7 +23,7 @@ An intuitive to-do notes app designed to help you stay organized and productive.
 A sleek and intuitive countdown timer to track important events effortlessly—whether it's a birthday, deadline, or special occasion.  
 
 ## 🔐 JWT Authentication  
-🔗 **Currently working**  
+🔗 (Project on Hold)
 
 A secure authentication system using JSON Web Tokens (JWT) to manage user access.  
 
@@ -32,5 +32,7 @@ A secure authentication system using JSON Web Tokens (JWT) to manage user access
 
 Use Spotify API to find the album based on artist's name.
 
-## Gemini Clone
+## 🧠 Gemini Clone
+🔗 [Gemini Clone](https://geminite.vercel.app/) 
 
+An AI-powered chatbot inspired by Google's Gemini.
