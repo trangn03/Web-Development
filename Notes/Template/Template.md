@@ -28,8 +28,35 @@ body {
 
 # Shortcut
 
+rafc 
 ```
-rfce
+import React from 'react';
+
+const ComponentName = () => {
+    return <div>ComponentName</div>;
+};
+
+export default ComponentName;
+```
+
 rafce
-sfc
+```
+import React from 'react';
+
+const ComponentName = () => {
+    return <div>ComponentName</div>;
+};
+
+export default ComponentName;
+```
+
+rfc
+```
+import React from 'react';
+
+function ComponentName() {
+    return <div>ComponentName</div>;
+}
+
+export default ComponentName;
 ```
