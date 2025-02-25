@@ -32,7 +32,7 @@ A secure authentication system using JSON Web Tokens (JWT) to manage user access
 
 Use Spotify API to find the album based on artist's name.
 
-## 🧠 Gemini Clone
-🔗 [Gemini Clone](https://geminite.vercel.app/) 
+## 🧠 Geminite
+🔗 [Geminite](https://geminite.vercel.app/) 
 
 An AI-powered chatbot inspired by Google's Gemini.
