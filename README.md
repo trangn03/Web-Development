@@ -36,3 +36,7 @@ Use Spotify API to find the album based on artist's name.
 🔗 [Geminite](https://geminite.vercel.app/) 
 
 An AI-powered chatbot inspired by Google's Gemini.
+
+## Restaurant 
+🔗 [Savory Spot](https://savoryspot.vercel.app/) 
+
