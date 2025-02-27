@@ -38,4 +38,5 @@ Use Spotify API to find the album based on artist's name.
 An AI-powered chatbot inspired by Google's Gemini.
 
 ## Restaurant 
+🔗 [Savory Spot](https://savoryspot.vercel.app/) 
 
