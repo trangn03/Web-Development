@@ -96,7 +96,58 @@ p {
 - margin-left
 
 Properties
-- auto: the browser calculates the margin
-- length: specifies a margin in px, pt, cm, etc.
-- %: specifies a margin in % of the width of the containing element
-- inherit - specifies that the margin should be inherited from the parent element
+- **auto**: the browser calculates the margin
+- **length**: specifies a margin in px, pt, cm, etc.
+- **%**: specifies a margin in % of the width of the containing element
+- **inherit** - specifies that the margin should be inherited from the parent element
+
+## Padding
+Used to generate space around an element's content, inside of any defined borders
+- padding-top
+- padding-right
+- padding-bottom
+- padding-left
+
+Properties
+- length: specifies a padding in px, pt, cm, etc.
+- %: specifies a padding in % of the width of the containing element
+- inherit: specifies that the padding should be inherited from the parent element
+
+## Height, Width, and Max-width
+**height** and **width**: set the height and width of an element.
+
+**max-width**: set the maximum width of an element
+
+Properties
+- auto: This is default. The browser calculates the height and width
+- length: Defines the height/width in px, cm, etc.
+- %: Defines the height/width in percent of the containing block
+- initial: Sets the height/width to its default value
+- inherit: The height/width will be inherited from its parent value
+
+## Box Model 
+Include different parts
+- **Content**: the content of the box, where text and images appear
+- **Padding**: Clears an area around the content. The padding is transparent
+- **Border**: A border that goes around the padding and content
+- **Margin**: Clears an area outside the border. The margin is transparent
+
+## Outline 
+Properties
+- outline-style
+- outline-color
+- outline-width
+- outline-offset
+- outline
+
+outline-style values:
+- dotted: Defines a dotted outline
+- dashed: Defines a dashed outline
+- solid: Defines a solid outline
+- double: Defines a double outline
+- groove: Defines a 3D grooved outline
+- ridge: Defines a 3D ridged outline
+- inset: Defines a 3D inset outline
+- outset: Defines a 3D outset outline
+- none: Defines no outline
+- hidden: Defines a hidden outline
