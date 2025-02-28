@@ -112,6 +112,26 @@ Properties
 - length: specifies a padding in px, pt, cm, etc.
 - %: specifies a padding in % of the width of the containing element
 - inherit: specifies that the padding should be inherited from the parent element
+  
+Padding with Element Width
+```width``` specifies the width of the element's content area
+
+Ex: Here, the ```<div>``` element is given a width of 300px. However, the actual width of the ```<div>``` element will be 350px (300px + 25px of left padding + 25px of right padding):
+```css
+div {
+  width: 300px;
+  padding: 25px;
+}
+```
+
+To keep the width at 300px, no matter the amount of padding, you can use the **box-sizing** property. This causes the element to maintain its actual width; if you increase the padding, the available content space will decrease.
+```css
+div {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+```
 
 ## Height, Width, and Max-width
 **height** and **width**: set the height and width of an element.
@@ -132,6 +152,16 @@ Include different parts
 - **Border**: A border that goes around the padding and content
 - **Margin**: Clears an area outside the border. The margin is transparent
 
+Ex: 
+```css
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+```
+
 ## Outline 
 Properties
 - outline-style
@@ -140,7 +170,7 @@ Properties
 - outline-offset
 - outline
 
-outline-style values:
+**outline-style values:**
 - dotted: Defines a dotted outline
 - dashed: Defines a dashed outline
 - solid: Defines a solid outline
@@ -151,3 +181,28 @@ outline-style values:
 - outset: Defines a 3D outset outline
 - none: Defines no outline
 - hidden: Defines a hidden outline
+
+![Outline style](../Images/CSS/outline-style.png)
+
+**outline-width**: width of the outline
+- thin (typically 1px)
+- medium (typically 3px)
+- thick (typically 5px)
+- a specific size
+Ex: 
+```css
+p.ex1 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thin;
+}
+```
+![Outline width](../Images/CSS/outline-width.png)
+
+**outline-color**: set color
+- name: specify a color name, like "red"
+- HEX: specify a hex value, like "#ff0000"
+- RGB: specify a RGB value, like "rgb(255,0,0)"
+- HSL - specify a HSL value, like "hsl(0, 100%, 50%)"
+- invert - performs a color inversion (which ensures that the outline is visible, regardless of color background)
