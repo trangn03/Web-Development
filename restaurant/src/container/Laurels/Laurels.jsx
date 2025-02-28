@@ -30,8 +30,6 @@ const Laurels = () => {
         <div className="app__laurels_awards">
           {data.awards.map((award) => <AwardCard award={award} key={award.title}/>)}
         </div>
-
-
       </div>
 
       <div className="app__wrapper_img">
