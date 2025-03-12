@@ -40,3 +40,6 @@ An AI-powered chatbot inspired by Google's Gemini.
 ## Restaurant 
 🔗 [Savory Spot](https://savoryspot.vercel.app/) 
 
+## Movies 
+🔗 [Movies]() 
+
